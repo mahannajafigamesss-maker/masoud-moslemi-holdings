@@ -14,7 +14,108 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      properties: {
+        Row: {
+          address: string
+          area: number
+          bathrooms: number | null
+          bedrooms: number | null
+          city: string
+          created_at: string
+          description: string | null
+          district: string | null
+          featured_image: string | null
+          floor_number: number | null
+          has_balcony: boolean | null
+          has_elevator: boolean | null
+          has_gym: boolean | null
+          has_pool: boolean | null
+          has_security: boolean | null
+          has_storage: boolean | null
+          id: string
+          images: string[] | null
+          is_featured: boolean | null
+          land_area: number | null
+          listing_type: string
+          parking_spaces: number | null
+          price: number | null
+          price_per_meter: number | null
+          property_type: string
+          status: string
+          title: string
+          total_floors: number | null
+          updated_at: string
+          views_count: number | null
+          year_built: number | null
+        }
+        Insert: {
+          address: string
+          area: number
+          bathrooms?: number | null
+          bedrooms?: number | null
+          city?: string
+          created_at?: string
+          description?: string | null
+          district?: string | null
+          featured_image?: string | null
+          floor_number?: number | null
+          has_balcony?: boolean | null
+          has_elevator?: boolean | null
+          has_gym?: boolean | null
+          has_pool?: boolean | null
+          has_security?: boolean | null
+          has_storage?: boolean | null
+          id?: string
+          images?: string[] | null
+          is_featured?: boolean | null
+          land_area?: number | null
+          listing_type?: string
+          parking_spaces?: number | null
+          price?: number | null
+          price_per_meter?: number | null
+          property_type?: string
+          status?: string
+          title: string
+          total_floors?: number | null
+          updated_at?: string
+          views_count?: number | null
+          year_built?: number | null
+        }
+        Update: {
+          address?: string
+          area?: number
+          bathrooms?: number | null
+          bedrooms?: number | null
+          city?: string
+          created_at?: string
+          description?: string | null
+          district?: string | null
+          featured_image?: string | null
+          floor_number?: number | null
+          has_balcony?: boolean | null
+          has_elevator?: boolean | null
+          has_gym?: boolean | null
+          has_pool?: boolean | null
+          has_security?: boolean | null
+          has_storage?: boolean | null
+          id?: string
+          images?: string[] | null
+          is_featured?: boolean | null
+          land_area?: number | null
+          listing_type?: string
+          parking_spaces?: number | null
+          price?: number | null
+          price_per_meter?: number | null
+          property_type?: string
+          status?: string
+          title?: string
+          total_floors?: number | null
+          updated_at?: string
+          views_count?: number | null
+          year_built?: number | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
