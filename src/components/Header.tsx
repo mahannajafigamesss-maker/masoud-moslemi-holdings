@@ -9,6 +9,7 @@ const Header = () => {
 
   const navLinks = [
     { name: "صفحه اصلی", href: "/" },
+    { name: "فایل‌های ملکی", href: "/properties" },
     { name: "پروژه‌های مشارکتی", href: "/projects" },
     { name: "درباره ما", href: "/#about" },
     { name: "خدمات", href: "/#services" },
