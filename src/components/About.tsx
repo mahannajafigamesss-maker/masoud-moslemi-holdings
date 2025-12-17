@@ -1,0 +1,89 @@
+import { CheckCircle2 } from "lucide-react";
+
+const About = () => {
+  const features = [
+    "مهندسان مجرب و متخصص",
+    "استفاده از مصالح درجه یک",
+    "تحویل به موقع پروژه‌ها",
+    "ضمانت کیفیت ساخت",
+    "خدمات پس از فروش",
+    "قیمت‌گذاری شفاف",
+  ];
+
+  return (
+    <section id="about" className="py-24 bg-background">
+      <div className="container mx-auto px-4 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Image Grid */}
+          <div className="relative">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-4">
+                <img
+                  src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=300&h=400&fit=crop"
+                  alt="پروژه ساختمانی"
+                  className="rounded-xl w-full h-48 object-cover shadow-lg"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=300&h=300&fit=crop"
+                  alt="عملیات ساختمانی"
+                  className="rounded-xl w-full h-40 object-cover shadow-lg"
+                />
+              </div>
+              <div className="pt-8 space-y-4">
+                <img
+                  src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=300&h=300&fit=crop"
+                  alt="تیم مهندسی"
+                  className="rounded-xl w-full h-40 object-cover shadow-lg"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=300&h=400&fit=crop"
+                  alt="ساختمان مدرن"
+                  className="rounded-xl w-full h-48 object-cover shadow-lg"
+                />
+              </div>
+            </div>
+            
+            {/* Experience Badge */}
+            <div className="absolute -bottom-4 right-1/2 translate-x-1/2 bg-primary text-primary-foreground px-8 py-4 rounded-xl shadow-xl">
+              <div className="text-3xl font-bold text-center">+۲۵</div>
+              <div className="text-sm opacity-90">سال تجربه</div>
+            </div>
+          </div>
+
+          {/* Content */}
+          <div className="space-y-8">
+            <div>
+              <span className="text-primary font-medium text-sm">درباره ما</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2">
+                هولدینگ ساختمانی
+                <span className="text-primary block">مسعود مسلمی</span>
+              </h2>
+            </div>
+
+            <p className="text-muted-foreground leading-relaxed text-lg">
+              هولدینگ ساختمانی مسعود مسلمی از سال ۱۳۷۵ فعالیت خود را در زمینه ساخت و ساز 
+              آغاز کرده و با اتکا به تیمی از مهندسان مجرب و استفاده از جدیدترین تکنولوژی‌های 
+              روز دنیا، به یکی از معتبرترین شرکت‌های ساختمانی کشور تبدیل شده است.
+            </p>
+
+            <p className="text-muted-foreground leading-relaxed">
+              ما معتقدیم که هر پروژه فرصتی است برای خلق فضایی است که زندگی مردم را 
+              بهتر کند. به همین دلیل، کیفیت و رضایت مشتری اولویت اصلی ماست.
+            </p>
+
+            <div className="grid grid-cols-2 gap-4">
+              {features.map((feature, index) => (
+                <div key={index} className="flex items-center gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
+                  <span className="text-foreground">{feature}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
