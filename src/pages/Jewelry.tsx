@@ -23,23 +23,23 @@ const Jewelry = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center pt-20 bg-gradient-to-b from-amber-50 to-background overflow-hidden">
+      <section className="relative min-h-[60vh] flex items-center pt-20 bg-gradient-to-b from-sage-muted/20 to-background overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-20 right-10 w-96 h-96 bg-amber-200/30 rounded-full blur-3xl" />
-          <div className="absolute bottom-20 left-10 w-72 h-72 bg-amber-100/40 rounded-full blur-3xl" />
+          <div className="absolute top-20 right-10 w-96 h-96 bg-primary/15 rounded-full blur-3xl" />
+          <div className="absolute bottom-20 left-10 w-72 h-72 bg-sage-light/25 rounded-full blur-3xl" />
         </div>
 
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 bg-amber-100 rounded-full px-4 py-2 text-sm text-amber-800">
+              <div className="inline-flex items-center gap-2 bg-primary/10 rounded-full px-4 py-2 text-sm text-primary">
                 <Gem className="w-4 h-4" />
                 زیرمجموعه هولدینگ مسعود مسلمی
               </div>
 
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 طلا فروشی
-                <span className="text-amber-600 block mt-2">الیزه</span>
+                <span className="text-primary block mt-2">الیزه</span>
               </h1>
 
               <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
@@ -47,14 +47,14 @@ const Jewelry = () => {
                 و قیمت مناسب به شما عزیزان ارائه می‌دهیم. همراه شما در لحظات خاص زندگی.
               </p>
 
-              <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white gap-2">
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2">
                 <Phone className="w-4 h-4" />
                 تماس با ما
               </Button>
             </div>
 
             <div className="relative hidden lg:block">
-              <div className="absolute -inset-4 bg-gradient-to-br from-amber-200/40 to-amber-400/20 rounded-3xl rotate-3" />
+              <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-sage-light/30 rounded-3xl rotate-3" />
               <img
                 src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&h=500&fit=crop"
                 alt="طلا و جواهر الیزه"
@@ -70,10 +70,10 @@ const Jewelry = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="border-amber-100 bg-amber-50/30 hover:shadow-lg transition-shadow">
+              <Card key={index} className="border-primary/20 bg-primary/5 hover:shadow-lg transition-shadow">
                 <CardContent className="p-6 text-center">
-                  <div className="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <feature.icon className="w-7 h-7 text-amber-600" />
+                  <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <feature.icon className="w-7 h-7 text-primary" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-2">{feature.title}</h3>
                   <p className="text-muted-foreground text-sm">{feature.description}</p>
@@ -116,7 +116,7 @@ const Jewelry = () => {
             {/* Map Placeholder */}
             <div className="rounded-2xl overflow-hidden h-[400px] bg-secondary/50 flex items-center justify-center">
               <div className="text-center p-8">
-                <MapPin className="w-16 h-16 text-amber-600 mx-auto mb-4" />
+                <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
                 <h3 className="text-xl font-bold text-foreground mb-2">موقعیت فروشگاه</h3>
                 <p className="text-muted-foreground">
                   تهران، بازار بزرگ، راسته طلافروشان، پلاک ۱۲۳
@@ -134,9 +134,9 @@ const Jewelry = () => {
               </div>
 
               <div className="space-y-6">
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-amber-50/50 border border-amber-100">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-amber-600" />
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-primary/5 border border-primary/20">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h4 className="font-bold text-foreground mb-1">آدرس</h4>
@@ -144,9 +144,9 @@ const Jewelry = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-amber-50/50 border border-amber-100">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-amber-600" />
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-primary/5 border border-primary/20">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h4 className="font-bold text-foreground mb-1">تلفن</h4>
@@ -155,9 +155,9 @@ const Jewelry = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-amber-50/50 border border-amber-100">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-amber-600" />
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-primary/5 border border-primary/20">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Clock className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h4 className="font-bold text-foreground mb-1">ساعات کاری</h4>
@@ -166,9 +166,9 @@ const Jewelry = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-amber-50/50 border border-amber-100">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Instagram className="w-6 h-6 text-amber-600" />
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-primary/5 border border-primary/20">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Instagram className="w-6 h-6 text-primary" />
                   </div>
                   <div>
                     <h4 className="font-bold text-foreground mb-1">شبکه‌های اجتماعی</h4>
